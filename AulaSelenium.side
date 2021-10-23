@@ -1,0 +1,92 @@
+{
+  "id": "3c890305-f95f-4a23-85b6-59e21edbfa31",
+  "version": "2.0",
+  "name": "Aula",
+  "url": "https://chrome.google.com/webstore/category/extensions",
+  "tests": [{
+    "id": "8be29ce2-e12d-4b50-b3aa-a18b3c3ba327",
+    "name": "Chrome web Store",
+    "commands": [{
+      "id": "45cc3d48-fd11-45bf-9488-fb1c9a1c471e",
+      "comment": "",
+      "command": "open",
+      "target": "https://chrome.google.com/webstore/category/extensions",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb98bc81-9886-4dd3-8a08-c6c5006eaf55",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f3775b4-cbfa-4b1e-8e06-5337bc3c1dec",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchbox-input",
+      "targets": [
+        ["id=searchbox-input", "id"],
+        ["css=#searchbox-input", "css:finder"],
+        ["xpath=//input[@id='searchbox-input']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89c86d20-68d7-458f-b3a2-c0a97097d581",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchbox-input",
+      "targets": [
+        ["id=searchbox-input", "id"],
+        ["css=#searchbox-input", "css:finder"],
+        ["xpath=//input[@id='searchbox-input']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Selenium Ide"
+    }, {
+      "id": "e782e65d-be24-419a-a771-b74bb339192b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchbox-input",
+      "targets": [
+        ["id=searchbox-input", "id"],
+        ["css=#searchbox-input", "css:finder"],
+        ["xpath=//input[@id='searchbox-input']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d33310a3-89c6-4e0a-9e15-8371fd63faba",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//html/body/div[3]/div[4]/main/div/div[1]/div/div[1]/div[2]/div/div[1]/a/div[3]/div[1]/div[1]/div[2]/div[1]",
+      "targets": [
+        ["css=.C-b-p-j-kk-dk", "css:finder"],
+        ["xpath=//div[3]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8af1de95-8c8f-41fc-aad9-46d88ce9ce33",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//html/body/div[3]/div[2]/div/div/div[3]/div[3]/div[1]/div/div[2]/div[2]/div[3]/span[2]",
+      "targets": [
+        ["css=.h-C-b-p-D-md", "css:finder"],
+        ["xpath=//div[3]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'3.17.1')]", "xpath:innerText"]
+      ],
+      "value": "3.17.1"
+    }]
+  }],
+  "suites": [{
+    "id": "44c59d11-34e8-4ecc-9a18-c23f76eb54f7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8be29ce2-e12d-4b50-b3aa-a18b3c3ba327"]
+  }],
+  "urls": ["https://chrome.google.com/", "https://chrome.google.com/webstore/category/extensions"],
+  "plugins": []
+}
